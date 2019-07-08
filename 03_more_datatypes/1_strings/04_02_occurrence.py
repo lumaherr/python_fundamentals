@@ -7,3 +7,7 @@ Letter input: o
 Result: 4
 
 '''
+
+a = "Hi World, youre good"
+result = a.find("o")
+print(result)

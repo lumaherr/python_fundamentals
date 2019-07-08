@@ -8,3 +8,8 @@ Result: #ore python progra##ing please
 
 '''
 
+a = "Hello friend, How are you !"
+print("Initial sentence: " + a)
+print("")
+b = a.replace("H", "$")
+print("Changed sentence: " + b)
