@@ -5,3 +5,8 @@ input_dict = {"item1": 5, "item2": 6, "item3": 1}
 result_list = [("item3", 1), ("item1", 5), ("item2", 6)]
 
 '''
+import operator
+input_dict = {"item1": 5, "item2": 6, "item3": 1}
+result_unsorted = list(input_dict.items())
+result_sorted = sorted(result_unsorted, key=operator.itemgetter(1))
+print(result_sorted)
