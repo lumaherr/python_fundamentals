@@ -9,3 +9,11 @@ that we haven't looked at yet. See if you can figure it out, otherwise
 come back to this task after you have learned about loops)
 
 '''
+list = []
+for i in range(0, 10):
+    number = int(input("Please type a number: "))
+    list.append(number)
+print("maximum in list: ", max(list))
+
+
+#no clue so far

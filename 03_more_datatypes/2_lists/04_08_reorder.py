@@ -7,3 +7,14 @@ Example input: 1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+list = []
+for i in range(0,10) :
+    number = int(input("Please type a number: "))
+    list.append(number)
+print("List: ", list)
+print(list[1], list[3], list[5], list[7], list[9])
+list_new = (list[0], list[2], list[4], list[6], list[8])
+for i in reversed(list_new) :
+    print(i)
+
+#dont know how to do this in one row
