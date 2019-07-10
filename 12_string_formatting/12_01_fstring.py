@@ -18,7 +18,18 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
+#loop through famous quote list:
+    #set current dictionaries quote = to current quote variable
+    #set full name = to full name variable
+    #split full name variable into 2
+    #take this when printing out the string print("quote", last name, first name"
+
+
+#'(f"{last name} first name)
+
+
 
 print(famous_quotes.values())
 
+print(famous_quotes[])
 #no clue
