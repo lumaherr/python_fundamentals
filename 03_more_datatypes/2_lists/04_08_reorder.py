@@ -7,14 +7,18 @@ Example input: 1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
-list = []
+input1 = []
 for i in range(0,10) :
     number = int(input("Please type a number: "))
-    list.append(number)
-print("List: ", list)
-print(list[1], list[3], list[5], list[7], list[9])
-list_new = (list[0], list[2], list[4], list[6], list[8])
-for i in reversed(list_new) :
-    print(i)
+    input1.append(number)
+print("Initial List: ", input1)
 
-#dont know how to do this in one row
+list1 = []
+for i in [1,3,5,7,9]:
+        list1.append(input1[i])
+list2 = []
+for i in [8,6,4,2,0]:
+    list2.append(input1[i])
+
+print(list1)
+print(list2)

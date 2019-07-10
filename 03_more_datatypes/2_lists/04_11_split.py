@@ -8,10 +8,7 @@ a = input("Write a sentence: ")
 b = a.split()
 print(b)
 
-c = []
-if i not in b:
-    if i not in c:
-        c.append(i)
-print(c)
-
-#no clue
+from statistics import mode #modus zeigt an, welches item am öftesten vorhanden ist
+def most_common(b):
+    return mode(b)
+print(most_common(b))

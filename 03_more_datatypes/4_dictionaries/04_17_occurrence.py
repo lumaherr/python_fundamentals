@@ -7,8 +7,10 @@ result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
 user_input = input("Type a word: ")
-split1=user_input.split()
-print(split1)
+split_input = user_input.split()
+split_input2 = split_input.split()
+print(split_input)
+print(split_input2)
 
 
 
