@@ -15,5 +15,7 @@ for i in range(0, 10):
     list.append(number)
 print("maximum in list: ", max(list))
 
-
-#no clue so far
+product = 1
+for i in list:
+    product *= i
+print(product)
