@@ -6,13 +6,10 @@ unique_list = [55, 'hi', 4, 13]
 
 
 '''
-list_1 = [1, 2, 6, 55, 2, 'hi', 4, 6, 1, 13]
-list_2 = []
-for i in list_1[]
+from collections import Counter
+ll = [1, 2, 6, 55, 2, 'hi', 4, 6, 1, 13]
+cc = Counter(ll)
+print(cc)
 
-
-
-if x is in list_1
-    extract x
-
-#no clue how to solve
+filtered = [i for i, count in cc.items() if count == 1]
+print(filtered)

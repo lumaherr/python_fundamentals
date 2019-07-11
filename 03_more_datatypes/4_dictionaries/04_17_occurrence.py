@@ -7,17 +7,10 @@ result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
 user_input = input("Type a word: ")
-split_input = user_input.split()
-split_input2 = split_input.split()
-print(split_input)
-print(split_input2)
+user_input_list = list(user_input)
 
+from collections import Counter
+cc = Counter(user_input_list)
+dict1 = dict(cc)
 
-
-
-'''
-dictionary1 = {}
-'''
-
-#noclue
-
+print(dict1)
