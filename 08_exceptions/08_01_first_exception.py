@@ -8,3 +8,9 @@ print(list_[1])
 This raises and exception that needs to be handled.
 
 '''
+#IndexError
+try:
+    list_ = ["hello world!"]
+    print(list_[1])
+except IndexError:
+    print("The Index is wrong")
