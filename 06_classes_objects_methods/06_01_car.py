@@ -23,4 +23,5 @@ class Car:
        return f"The car {self.model} from {self.year} has a maximum speed of {self.max_speed}."
 
 a = Car("Porsche", 2019, 200)
+a.turbo()
 print(a)

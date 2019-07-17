@@ -1,43 +1,20 @@
-class Ingredient:
-  """Models an ingredient including its name and amount."""
-  def __init__(self, name, amount):
-    self.name = name
-    self.amount = amount
-
-  def __str__(self):
-    return f"There are {self.amount} of {self.name}."
-
-  def use(self, use_amount):
-    """Reduces the amount of ingredient available."""
-    self.amount -= use_amount
-
-  def expire(self):
-    """Expires the ingredient item."""
-    print(f"whoops, these {self.name} went bad...")
-    self.name = "expired " + self.name
+class MyCustomException(Exception):
+    def __init__(self, errors):
+        #self.errors = errors
 
 
-# INHERITANCE: building a subclass called Spice
+try:
+    raise (MyCustomException(10))
+except MyCustomException as errors:
+    print('A New Exception occurred:', errors)
 
+'''
 
-class Spice(Ingredient):
-  """Models an ingredient including its name, amount, and taste."""
-  # customize the __init__() method
-  def __init__(self, name, amount, taste):
-    super().__init__(name, amount)
-    self.taste = taste
+class MyCustomException(Exception):
 
-  # create a custom method grind()
-  def grind(self):
-    print(f"you have now {self.amount} of ground {self.name}")
+    def __init__(self, message, errors):
 
-  # override the expire() method
-  def expire(self):
-    if self.name == 'salt':
-      print(f"{self.name} never expires! ask the sea!")
-    else:
-      print(f"this {self.name} went bad...")
-      self.name = f"expired {self.name}"
+    super().__init__(message)
+        self.errors = errors
 
-n = Ingredient("Cucumber", 10)
-n.expire()
+'''

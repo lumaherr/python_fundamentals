@@ -34,29 +34,3 @@ print(famous_quotes[])
 #no clue
 '''
 
-class Car:
-    def __init__(self, model, year, speed):
-        self.model = model
-        self.year = year
-        self.speed = speed
-
-    def accelerate(self):
-            self.speed += 5
-
-    def brake(self):
-        if self.speed >= 5:
-            self.speed -= 5
-        else:
-            self.speed == 0
-
-    def honk_horn(self):
-        return print(f"{self.model} goes beep beep")
-
-my_car = Car("Porsche", "2019", 3)
-print(my_car.model)
-print(my_car.year)
-
-my_car.brake()
-print(my_car.speed)
-my_car.honk_horn()
-
