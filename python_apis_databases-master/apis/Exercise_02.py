@@ -10,26 +10,14 @@ from pprint import pprint
 base_url = "http://demo.codingnomads.co:8080/tasks_api/users"
 response = requests.get(base_url)
 
-data = response.json()
-print(type(data))
-data2 = data[0]
-pprint(data2)
-pprint((data))
+json_response = response.json()
+print(type(json_response))
+data = json_response["data"]
 
 lis = []
 
-#data3 = data.get('email')
-print(lis)
-'''
-for k, v in data:
-    if k == 'email':
-        lis.append(k,v)
-
-
 for i in data:
+    data1 = i['email']
+    lis.append(data1)
 
-
-
-data2 = [d['email'] for d in data]
-print(data2)
-'''
+print(lis)
